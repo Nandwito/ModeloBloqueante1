@@ -1,7 +1,6 @@
-var fs = require("fs")
-console.log("\nAbriendo el archivo...")
-var content = fs.readFileSync("el_quijote.txt","UTF8", function(error,content){
-    console.log(content)
-})
-console.log("\nHaciendo otra cosa")
-console.log(process.uptime())
+const fs = require("fs");
+console.log('Abriendo archivo');
+const content = fs.readFileSync('elquijote.txt', 'utf8');
+console.log(content);
+console.log('Haciendo otra cosa');
+console.log(process.uptime());
